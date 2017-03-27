@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.myapplication.ChildActivity_1">
+
+
+    <TextView
+        android:id="@+id/intr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="現在位置:Child Activity"
+
+        tools:layout_editor_absoluteY="70dp"
+        tools:layout_editor_absoluteX="15dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="點擊下方按鈕返回Main Activity"
+        app:layout_constraintStart_toStartOf="@id/intr"
+        app:layout_constraintTop_toTopOf="@id/intr"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="35dp" />
+
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        app:layout_constraintStart_toStartOf="@id/intr"
+        app:layout_constraintTop_toTopOf="@id/intr"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="75dp" />
+
+</android.support.constraint.ConstraintLayout>
